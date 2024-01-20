@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import mskfilter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskfilter@deno/mod.js';
+import mskfilter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskfilter@v0.1.0-deno/mod.js';
 ```
 
 #### mskfilter( x, mask )
@@ -80,7 +80,7 @@ var y = mskfilter( x, [ 0, 1, 0, 1 ] );
 ```javascript
 import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@deno/mod.js';
 import bernoulli from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-bernoulli@deno/mod.js';
-import mskfilter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskfilter@deno/mod.js';
+import mskfilter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskfilter@v0.1.0-deno/mod.js';
 
 // Generate a linearly spaced array:
 var x = zeroTo( 20 );
