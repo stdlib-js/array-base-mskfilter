@@ -35,43 +35,32 @@ limitations under the License.
 
 > Return a new array by applying a mask to a provided input array.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-base-mskfilter
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-mskfilter = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskfilter@umd/browser.js' )
-```
-The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-base-mskfilter/tags). For example,
-
-```javascript
-mskfilter = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskfilter@v0.1.0-umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var mskfilter = require( 'path/to/vendor/umd/array-base-mskfilter/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskfilter@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.mskfilter;
-})();
-</script>
+var mskfilter = require( '@stdlib/array-base-mskfilter' );
 ```
 
 #### mskfilter( x, mask )
@@ -106,15 +95,10 @@ var y = mskfilter( x, [ 0, 1, 0, 1 ] );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-bernoulli@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskfilter@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var zeroTo = require( '@stdlib/array-base-zero-to' );
+var bernoulli = require( '@stdlib/random-array-bernoulli' );
+var mskfilter = require( '@stdlib/array-base-mskfilter' );
 
 // Generate a linearly spaced array:
 var x = zeroTo( 20 );
@@ -130,11 +114,6 @@ var y = mskfilter( x, mask );
 console.log( x );
 console.log( mask );
 console.log( y );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -188,8 +167,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/array-base-mskfilter.svg
 [npm-url]: https://npmjs.org/package/@stdlib/array-base-mskfilter
 
-[test-image]: https://github.com/stdlib-js/array-base-mskfilter/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/array-base-mskfilter/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/array-base-mskfilter/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/array-base-mskfilter/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/array-base-mskfilter/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/array-base-mskfilter?branch=main
@@ -212,8 +191,11 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
 [deno-url]: https://github.com/stdlib-js/array-base-mskfilter/tree/deno
+[deno-readme]: https://github.com/stdlib-js/array-base-mskfilter/blob/deno/README.md
 [umd-url]: https://github.com/stdlib-js/array-base-mskfilter/tree/umd
+[umd-readme]: https://github.com/stdlib-js/array-base-mskfilter/blob/umd/README.md
 [esm-url]: https://github.com/stdlib-js/array-base-mskfilter/tree/esm
+[esm-readme]: https://github.com/stdlib-js/array-base-mskfilter/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/array-base-mskfilter/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-base-mskfilter/main/LICENSE
