@@ -45,7 +45,7 @@
     "@stdlib/array-base-zero-to": "^0.1.0",
     "@stdlib/array-complex64": "^0.1.0",
     "@stdlib/assert-is-array": "^0.1.1",
-    "@stdlib/assert-is-same-complex64": "github:stdlib-js/assert-is-same-complex64#main",
+    "@stdlib/assert-is-same-complex64": "^0.1.0",
     "@stdlib/math-base-special-pow": "^0.1.0",
     "@stdlib/random-array-bernoulli": "^0.1.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
