@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2024 The Stdlib Authors.
@@ -16,50 +16,28 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
-var resolveGetter = require( '@stdlib/array-base-resolve-getter' );
-
-
-// MAIN //
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Returns a new array by applying a mask to a provided input array.
 *
-* @param {Collection} x - input array
-* @param {Collection} mask - mask array
-* @returns {Array} output array
+* @param x - input array
+* @param mask - mask array
+* @returns output array
 *
 * @example
 * var x = [ 1, 2, 3, 4 ];
-* var mask = [ 0, 1, 0, 1 ];
 *
-* var y = mskfilter( x, mask );
+* var y = mskfilter( x, [ 0, 1, 0, 1 ] );
 * // returns [ 2, 4 ]
 */
-function mskfilter( x, mask ) {
-	var xget;
-	var mget;
-	var out;
-	var i;
-
-	// Resolve accessors for retrieving array elements:
-	xget = resolveGetter( x );
-	mget = resolveGetter( mask );
-
-	// Extract each desired element from the provided array...
-	out = [];
-	for ( i = 0; i < x.length; i++ ) {
-		if ( mget( mask, i ) ) {
-			out.push( xget( x, i ) ); // use `Array#push` to ensure "fast" elements
-		}
-	}
-	return out;
-}
+declare function mskfilter<T = unknown>( x: Collection<T>, mask: Collection ): Array<T>;
 
 
 // EXPORTS //
 
-module.exports = mskfilter;
+export = mskfilter;
