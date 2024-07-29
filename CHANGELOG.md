@@ -2,9 +2,9 @@
 
 > Package changelog.
 
-<section class="release" id="unreleased">
+<section class="release" id="v0.3.0">
 
-## Unreleased (2024-06-25)
+## 0.3.0 (2024-07-29)
 
 <section class="features">
 
@@ -56,7 +56,6 @@ A total of 2 people contributed to this release. Thank you to the following cont
 ### Features
 
 -   [`d34ae78`](https://github.com/stdlib-js/stdlib/commit/d34ae789c63908f3edd1e7a746abd4cc60619b27) - add `assign` method
--   [`9ddd477`](https://github.com/stdlib-js/stdlib/commit/9ddd477714ea64d19f833e30a701543b71313900) - add `array/base/mskfilter`
 
 </section>
 
@@ -70,6 +69,59 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 -   [`e6b1bb6`](https://github.com/stdlib-js/stdlib/commit/e6b1bb67af1e4cbb22cc89aca697a78f6ff5902b) - **bench:** update benchmark to perform full copy _(by Athan Reines)_
 -   [`d34ae78`](https://github.com/stdlib-js/stdlib/commit/d34ae789c63908f3edd1e7a746abd4cc60619b27) - **feat:** add `assign` method _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Athan Reines
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.2.0">
+
+## 0.2.0 (2024-02-14)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.1.0">
+
+## 0.1.0 (2024-01-20)
+
+<section class="features">
+
+### Features
+
+-   [`9ddd477`](https://github.com/stdlib-js/stdlib/commit/9ddd477714ea64d19f833e30a701543b71313900) - add `array/base/mskfilter`
+
+</section>
+
+<!-- /.features -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
 -   [`9f7eb57`](https://github.com/stdlib-js/stdlib/commit/9f7eb57ca2732c54dcf42b65b027f9422e8fce30) - **test:** use utility to explicitly test for Complex64 _(by Athan Reines)_
 -   [`9ddd477`](https://github.com/stdlib-js/stdlib/commit/9ddd477714ea64d19f833e30a701543b71313900) - **feat:** add `array/base/mskfilter` _(by Athan Reines)_
 
